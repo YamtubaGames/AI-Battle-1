@@ -1,7 +1,6 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-#include "Unit.h"
 #include <Coord.h>
 //#include <BlankUnit.h>
 #include <UnitMovement.h>
