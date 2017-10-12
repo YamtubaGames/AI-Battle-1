@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1507831729 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/main.cpp
+	<iostream>
+	<Display.h>
+	<Board.h>
+	<SpecificUtilities.h>
+
+1507748223 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Unit.cpp
+	"Unit.h"
+
+1507814301 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Unit.h
+	<Coord.h>
+	<BoardChecker.h>
+
+1507831229 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Board.cpp
+	"Board.h"
+
+1507831198 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Board.h
+	"Unit.h"
+	<Coord.h>
+	<UnitMovement.h>
+
+1507664631 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Coord.h
+
+1507665527 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/BoardChecker.h
+
+1507813135 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/BlankUnit.cpp
+	"BlankUnit.h"
+
+1507813524 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/BlankUnit.h
+	<Unit.h>
+
+1507830528 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
+	"UnitMovement.h"
+
+1507831084 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/UnitMovement.h
+	<Coord.h>
+	<ctype.h>
+
+1507831878 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Display.cpp
+	"Display.h"
+
+1507830825 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Display.h
+	<string>
+	<iostream>
+	<sstream>
+	<Board.h>
+	<UnitMovement.h>
+
+1507831433 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/SpecificUtilities.cpp
+	"SpecificUtilities.h"
+
+1507831122 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/SpecificUtilities.h
+	<Board.h>
+
