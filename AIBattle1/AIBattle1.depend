@@ -53,3 +53,41 @@
 1507831122 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/SpecificUtilities.h
 	<Board.h>
 
+1507835084 source:/home/andrew/AI-Battle-1/AIBattle1/src/Board.cpp
+	"Board.h"
+
+1507835084 source:/home/andrew/AI-Battle-1/AIBattle1/src/Display.cpp
+	"Display.h"
+
+1507835084 source:/home/andrew/AI-Battle-1/AIBattle1/src/SpecificUtilities.cpp
+	"SpecificUtilities.h"
+
+1507836133 /home/andrew/AI-Battle-1/AIBattle1/include/Board.h
+	<Coord.h>
+	<UnitMovement.h>
+
+1507837762 /home/andrew/AI-Battle-1/AIBattle1/include/Coord.h
+
+1507835084 /home/andrew/AI-Battle-1/AIBattle1/include/UnitMovement.h
+	<Coord.h>
+	<ctype.h>
+
+1507835084 /home/andrew/AI-Battle-1/AIBattle1/include/Display.h
+	<string>
+	<iostream>
+	<sstream>
+	<Board.h>
+	<UnitMovement.h>
+
+1507835084 /home/andrew/AI-Battle-1/AIBattle1/include/SpecificUtilities.h
+	<Board.h>
+
+1507836125 source:/home/andrew/AI-Battle-1/AIBattle1/main.cpp
+	<iostream>
+	<Display.h>
+	<Board.h>
+	<SpecificUtilities.h>
+
+1507836883 source:/home/andrew/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
+	"UnitMovement.h"
+
