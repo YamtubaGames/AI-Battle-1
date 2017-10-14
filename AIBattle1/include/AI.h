@@ -2,6 +2,7 @@
 #define AI_H
 
 #include <TurnDecision.h>
+#include <BoardInfo.h>
 
 class AI
 {
@@ -9,7 +10,7 @@ class AI
         AI();
         virtual ~AI();
 
-        virtual TurnDecision MakeDecision() = 0;
+        virtual TurnDecision MakeDecision(BoardInfo BoardState) = 0;
 
     protected:
 

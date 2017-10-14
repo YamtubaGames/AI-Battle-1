@@ -38,6 +38,30 @@ bool Board::Move(Coord From, Coord To, bool isShooting)
     return valid;
 }
 
+bool Board::BuildWall(Coord Tile)
+{
+    if(!InBounds(Tile))
+        return false;
+    if(WallMap[getIndex(Tile)])
+        return false;
+    if(UnitMap[getIndex(Tile)] == 2 || UnitMap[getIndex(Tile)] == 5)
+    {
+        WallMap[getIndex(Tile)] = true;
+        return true;
+    }
+    else
+        return false;
+}
+
+bool Board::Exec(TurnDecision InputMove, bool team)
+{
+    // TODO: Check team's affiliation
+    if(InputMove.buildWall)
+        return BuildWall(InputMove.From);
+    else
+        return Move(InputMove.From, InputMove.To, InputMove.shoot);
+}
+
 bool Board::InBounds(Coord Target)
 {
     if(Target.x >= 0 && Target.y >= 0 && Target.x <= width && Target.y <= height)

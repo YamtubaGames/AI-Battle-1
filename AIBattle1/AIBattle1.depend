@@ -1,9 +1,13 @@
 # depslib dependency file v1.0
-1507831729 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/main.cpp
+1507929348 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/main.cpp
 	<iostream>
 	<Display.h>
 	<Board.h>
 	<SpecificUtilities.h>
+	<AI.h>
+	<ManualPlayer.h>
+	<TurnDecision.h>
+	<BoardInfo.h>
 
 1507748223 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Unit.cpp
 	"Unit.h"
@@ -12,15 +16,15 @@
 	<Coord.h>
 	<BoardChecker.h>
 
-1507831229 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Board.cpp
+1507928951 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Board.cpp
 	"Board.h"
 
-1507831198 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Board.h
-	"Unit.h"
+1507928956 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Board.h
 	<Coord.h>
 	<UnitMovement.h>
+	<TurnDecision.h>
 
-1507664631 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Coord.h
+1507838246 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Coord.h
 
 1507665527 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/BoardChecker.h
 
@@ -30,14 +34,14 @@
 1507813524 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/BlankUnit.h
 	<Unit.h>
 
-1507830528 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
+1507838246 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
 	"UnitMovement.h"
 
 1507831084 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/UnitMovement.h
 	<Coord.h>
 	<ctype.h>
 
-1507831878 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Display.cpp
+1507928015 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Display.cpp
 	"Display.h"
 
 1507830825 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Display.h
@@ -90,4 +94,28 @@
 
 1507836883 source:/home/andrew/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
 	"UnitMovement.h"
+
+1507836838 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/AI.cpp
+	"AI.h"
+
+1507901184 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/AI.h
+	<TurnDecision.h>
+	<BoardInfo.h>
+
+1507837420 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/TurnDecision.h
+	<Coord.h>
+
+1507903139 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/BoardInfo.cpp
+	"BoardInfo.h"
+
+1507902438 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/BoardInfo.h
+	<Board.h>
+	<cstring>
+
+1507927967 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/ManualPlayer.cpp
+	"ManualPlayer.h"
+
+1507927485 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/ManualPlayer.h
+	<AI.h>
+	<iostream>
 

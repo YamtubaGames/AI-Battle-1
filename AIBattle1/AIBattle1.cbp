@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -32,7 +33,23 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/AI.h" />
+		<Unit filename="include/Board.h" />
+		<Unit filename="include/BoardInfo.h" />
+		<Unit filename="include/Coord.h" />
+		<Unit filename="include/Display.h" />
+		<Unit filename="include/ManualPlayer.h" />
+		<Unit filename="include/SpecificUtilities.h" />
+		<Unit filename="include/TurnDecision.h" />
+		<Unit filename="include/UnitMovement.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/AI.cpp" />
+		<Unit filename="src/Board.cpp" />
+		<Unit filename="src/BoardInfo.cpp" />
+		<Unit filename="src/Display.cpp" />
+		<Unit filename="src/ManualPlayer.cpp" />
+		<Unit filename="src/SpecificUtilities.cpp" />
+		<Unit filename="src/UnitMovement.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

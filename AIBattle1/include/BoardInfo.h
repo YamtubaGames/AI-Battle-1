@@ -2,6 +2,7 @@
 #define BOARDINFO_H
 
 #include <Board.h>
+#include <cstring>
 
 struct BoardInfo
 {
