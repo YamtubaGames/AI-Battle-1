@@ -6,8 +6,10 @@
 #include <sstream>
 
 #include <Board.h>
-#include <UnitMovement.h>
 
 void Draw(Board &DrawBoard);
+char getUnitDisplay(char Index, bool walled);
+
+const char UnitCharacters[] = {'x', 'a', 'b', 'c', 'e', 'd', 'f'};
 
 #endif // DISPLAY_H

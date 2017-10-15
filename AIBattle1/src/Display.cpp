@@ -19,3 +19,15 @@ void Draw(Board &DrawBoard)
 
     //cout << buffer;
 }
+
+char getUnitDisplay(char Index, bool Walled)
+{
+    //if(Index >= UnitCharacters)
+    if(!Walled)
+    {
+        return UnitCharacters[(int)Index];
+    } else
+    {
+        return toupper(UnitCharacters[(int)Index]);
+    }
+}

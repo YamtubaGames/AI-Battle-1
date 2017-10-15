@@ -41,7 +41,6 @@
 		<Unit filename="include/ManualPlayer.h" />
 		<Unit filename="include/SpecificUtilities.h" />
 		<Unit filename="include/TurnDecision.h" />
-		<Unit filename="include/UnitMovement.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AI.cpp" />
 		<Unit filename="src/Board.cpp" />
@@ -49,7 +48,6 @@
 		<Unit filename="src/Display.cpp" />
 		<Unit filename="src/ManualPlayer.cpp" />
 		<Unit filename="src/SpecificUtilities.cpp" />
-		<Unit filename="src/UnitMovement.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

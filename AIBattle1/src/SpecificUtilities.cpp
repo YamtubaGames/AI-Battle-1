@@ -11,8 +11,8 @@ void Fill5x5Map(Board &MapBoard)
         UnitMap[MapBoard.getIndex(x, 1)] = 2;
 
     for(int x = 0; x < 5; ++x)
-        UnitMap[MapBoard.getIndex(x, 4)] = 3;
-    UnitMap[MapBoard.getIndex(2, 4)] = 1;
+        UnitMap[MapBoard.getIndex(x, 4)] = 6;
+    UnitMap[MapBoard.getIndex(2, 4)] = 4;
     for(int x = 0; x < 5; ++x)
-        UnitMap[MapBoard.getIndex(x, 3)] = 2;
+        UnitMap[MapBoard.getIndex(x, 3)] = 5;
 }

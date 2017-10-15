@@ -16,10 +16,10 @@
 	<Coord.h>
 	<BoardChecker.h>
 
-1507928951 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Board.cpp
+1508110238 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Board.cpp
 	"Board.h"
 
-1507928956 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Board.h
+1508110011 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Board.h
 	<Coord.h>
 	<UnitMovement.h>
 	<TurnDecision.h>
@@ -34,24 +34,24 @@
 1507813524 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/BlankUnit.h
 	<Unit.h>
 
-1507838246 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
+1508109551 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
 	"UnitMovement.h"
 
-1507831084 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/UnitMovement.h
-	<Coord.h>
+1508109447 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/UnitMovement.h
 	<ctype.h>
+	<Coord.h>
+	<Board.h>
 
-1507928015 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Display.cpp
+1508109405 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/Display.cpp
 	"Display.h"
 
-1507830825 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Display.h
+1508109503 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/Display.h
 	<string>
 	<iostream>
 	<sstream>
 	<Board.h>
-	<UnitMovement.h>
 
-1507831433 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/SpecificUtilities.cpp
+1508107997 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/SpecificUtilities.cpp
 	"SpecificUtilities.h"
 
 1507831122 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/SpecificUtilities.h
@@ -95,7 +95,8 @@
 1507837933 source:/home/andrew/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
 	"UnitMovement.h"
 
-<<<<<<< HEAD
+1507837933 D
+
 1507899910 source:/home/andrew/AI-Battle-1/AIBattle1/src/AI.cpp
 	"AI.h"
 
@@ -110,7 +111,9 @@
 
 1507899910 /home/andrew/AI-Battle-1/AIBattle1/include/BoardInfo.h
 	<Board.h>
-=======
+
+1507899910 
+
 1507836838 source:/home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/src/AI.cpp
 	"AI.h"
 
@@ -134,5 +137,6 @@
 1507927485 /home/user/Documents/Projects/AI-Battle-1/AI-Battle-1/AIBattle1/include/ManualPlayer.h
 	<AI.h>
 	<iostream>
->>>>>>> 606543ba544a51009ca22fd69f9f85c6ef5089db
+
+1507927485 543ba544a51009ca22fd69f9f85c6ef5089db
 

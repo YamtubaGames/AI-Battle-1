@@ -17,10 +17,10 @@ Board::~Board()
 
 bool Board::Move(Coord From, Coord To, bool isShooting)
 {
-    if(!InBounds(From) || !InBounds(To))
+    if(!InBounds(To))
         return false;
 
-    bool valid = UnitMove(UnitMap[getIndex(From)], isShooting, From, To, WallMap[getIndex(From)], WallMap[getIndex(To)]);
+    bool valid = UnitMove(UnitMap[getIndex(From)], isShooting, From, To);
 
     if(valid)
     {
@@ -40,8 +40,6 @@ bool Board::Move(Coord From, Coord To, bool isShooting)
 
 bool Board::BuildWall(Coord Tile)
 {
-    if(!InBounds(Tile))
-        return false;
     if(WallMap[getIndex(Tile)])
         return false;
     if(UnitMap[getIndex(Tile)] == 2 || UnitMap[getIndex(Tile)] == 5)
@@ -55,7 +53,16 @@ bool Board::BuildWall(Coord Tile)
 
 bool Board::Exec(TurnDecision InputMove, bool team)
 {
-    // TODO: Check team's affiliation
+    if(!InBounds(InputMove.To))
+        return false;
+
+    int unitTeam = getTeam(UnitMap[getIndex(InputMove.From)]);
+
+    if(unitTeam < 0)
+        return false;
+    if(unitTeam != team)
+        return false;
+
     if(InputMove.buildWall)
         return BuildWall(InputMove.From);
     else
@@ -77,4 +84,82 @@ int Board::getIndex(int x, int y)
 int Board::getIndex(Coord Coordinate)
 {
     return getIndex(Coordinate.x, Coordinate.y);
+}
+
+bool Board::UnitMove(char Index, bool shooting, Coord From, Coord To)
+{
+    switch(Index)
+    {
+        case 0:
+			if(shooting)
+				return false;
+            else if(From - To > 2)
+                return false;
+            else
+            {
+
+            }
+            break;
+        case 1:
+            if(shooting)
+                return false;
+            else if(From - To > 1)
+                return false;
+            else
+            {
+
+            }
+            break;
+        case 2:
+            if(shooting)
+            {
+
+            } else
+            {
+
+            }
+            break;
+        case 3:
+            if(shooting)
+                return false;
+            else if(From - To > 2)
+                return false;
+            else
+            {
+
+            }
+            break;
+        case 4:
+            if(shooting)
+                return false;
+            else if(From - To > 1)
+                return false;
+            else
+            {
+
+            }
+            break;
+        case 5:
+            if(shooting)
+            {
+
+            } else
+            {
+
+            }
+            break;
+        default:
+            return false;
+    }
+}
+
+int Board::getTeam(char Index)
+{
+    if(Index == 0)
+        return -1;
+    if(Index <= 3)
+        return 0;
+    if(Index <= 6)
+        return 1;
+    return -2;
 }

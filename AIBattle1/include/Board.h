@@ -26,6 +26,10 @@ class Board
 
     private:
         bool InBounds(Coord Target);
+
+        bool UnitMove(char Index, bool shooting, Coord From, Coord To);
+
+        int getTeam(char Index);
 };
 
 #endif // BOARD_H
