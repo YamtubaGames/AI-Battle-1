@@ -88,6 +88,21 @@
 	<Board.h>
 	<SpecificUtilities.h>
 
-1507836883 source:/home/andrew/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
+1507837933 source:/home/andrew/AI-Battle-1/AIBattle1/src/UnitMovement.cpp
 	"UnitMovement.h"
+
+1507899910 source:/home/andrew/AI-Battle-1/AIBattle1/src/AI.cpp
+	"AI.h"
+
+1507899910 /home/andrew/AI-Battle-1/AIBattle1/include/AI.h
+	<TurnDecision.h>
+
+1507899910 /home/andrew/AI-Battle-1/AIBattle1/include/TurnDecision.h
+	<Coord.h>
+
+1507899910 source:/home/andrew/AI-Battle-1/AIBattle1/src/BoardInfo.cpp
+	"BoardInfo.h"
+
+1507899910 /home/andrew/AI-Battle-1/AIBattle1/include/BoardInfo.h
+	<Board.h>
 

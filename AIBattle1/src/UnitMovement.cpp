@@ -17,6 +17,8 @@ bool UnitMove(char Index, bool shooting, Coord From, Coord To, bool FromWalled =
         case 1:
             if(shooting)
                 return false;
+            else if(From - To > 1)
+                return false;
             else
             {
 
@@ -34,6 +36,8 @@ bool UnitMove(char Index, bool shooting, Coord From, Coord To, bool FromWalled =
         case 3:
             if(shooting)
                 return false;
+            else if(From - To > 2)
+                return false;
             else
             {
 
@@ -41,6 +45,8 @@ bool UnitMove(char Index, bool shooting, Coord From, Coord To, bool FromWalled =
             break;
         case 4:
             if(shooting)
+                return false;
+            else if(From - To > 1)
                 return false;
             else
             {
