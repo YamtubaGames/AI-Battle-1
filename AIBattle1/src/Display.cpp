@@ -8,9 +8,9 @@ void Draw(Board &DrawBoard)
 
     //stringstream buffer;
 
-    for(int x = 0; x < DrawBoard.width; ++x)
+    for(int y = 0; y < DrawBoard.height; ++y)
     {
-        for(int y = 0; y < DrawBoard.height; ++y)
+        for(int x = 0; x < DrawBoard.width; ++x)
         {
             cout << getUnitDisplay(DrawBoard.UnitMap[DrawBoard.getIndex(x, y)], DrawBoard.WallMap[DrawBoard.getIndex(x, y)]);
         }
