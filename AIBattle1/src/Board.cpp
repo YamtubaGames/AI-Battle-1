@@ -94,7 +94,7 @@ bool Board::UnitMove(char Index, bool shooting, Coord From, Coord To)
     bool endWall = WallMap[getIndex(To)];
     switch(Index)
     {
-        case '1':
+        case 1:
 			if(shooting)
 				return false;
             else if(From - To > 2)
@@ -110,7 +110,7 @@ bool Board::UnitMove(char Index, bool shooting, Coord From, Coord To)
             else
                 return true;
             break;
-        case '2':
+        case 2:
             if(shooting)
                 return false;
             else if(From - To > 1)
@@ -124,7 +124,7 @@ bool Board::UnitMove(char Index, bool shooting, Coord From, Coord To)
             else
                 return true;
             break;
-        case '3':
+        case 3:
             if(shooting)
             {
                 if(UnitMap[getIndex(To)] == 0)
@@ -158,7 +158,7 @@ bool Board::UnitMove(char Index, bool shooting, Coord From, Coord To)
                     return true;
             }
             break;
-        case '4':
+        case 4:
             if(shooting)
 				return false;
             else if(From - To > 2)
@@ -174,7 +174,7 @@ bool Board::UnitMove(char Index, bool shooting, Coord From, Coord To)
             else
                 return true;
             break;
-        case '5':
+        case 5:
            if(shooting)
                 return false;
             else if(From - To > 1)
@@ -188,7 +188,7 @@ bool Board::UnitMove(char Index, bool shooting, Coord From, Coord To)
             else
                 return true;
             break;
-        case '6':
+        case 6:
             if(shooting)
             {
                 if(UnitMap[getIndex(To)] == 0)
