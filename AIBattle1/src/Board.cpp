@@ -88,64 +88,138 @@ int Board::getIndex(Coord Coordinate)
 
 bool Board::UnitMove(char Index, bool shooting, Coord From, Coord To)
 {
+    char middle = UnitMap[getIndex((From.x + To.x) /2, (From.y + To.y) / 2)];
+    char theEnd = UnitMap[getIndex(To)];
+    bool onWall = WallMap[getIndex(From)];
+    bool endWall = WallMap[getIndex(To)];
     switch(Index)
     {
-        case 0:
+        case '1':
 			if(shooting)
 				return false;
             else if(From - To > 2)
                 return false;
-            else
-            {
-
+            else if((middle == 6) || (middle == 4) || (middle == 5))
+                return false;
+            else if((theEnd == 3) || (theEnd == 2))
+                return false;
+            /*
+            else if(attacking a wall){
             }
+            */
+            else
+                return true;
             break;
-        case 1:
+        case '2':
             if(shooting)
                 return false;
             else if(From - To > 1)
                 return false;
-            else
-            {
-
+            else if((theEnd == 3) || (theEnd == 1) || (theEnd == 2))
+                return false;
+            /*
+            else if(attacking a wall){
             }
+            */
+            else
+                return true;
             break;
-        case 2:
+        case '3':
             if(shooting)
             {
-
+                if(UnitMap[getIndex(To)] == 0)
+                    return false;
+                if(onWall)
+                {
+                    if((From - To) > 2)
+                        return false;
+                    else if(endWall && ((From - To) == 2))
+                        return false;
+                    else if((theEnd == 3) || (theEnd == 1) || (theEnd == 2))
+                        return false;
+                    else
+                        return true;
+                } else
+                {
+                    if((From - To) > 1)
+                        return false;
+                    else if((theEnd == 3) || (theEnd == 1) || (theEnd == 2))
+                        return false;
+                    else
+                        return true;
+                }
             } else
             {
-
+                if(From - To > 1)
+                    return false;
+                else if(theEnd != 0)
+                    return false;
+                else
+                    return true;
             }
             break;
-        case 3:
+        case '4':
             if(shooting)
-                return false;
+				return false;
             else if(From - To > 2)
                 return false;
-            else
-            {
-
+            else if((middle == 1) || (middle == 2) || (middle == 3))
+                return false;
+            else if((theEnd == 5) || (theEnd == 6))
+                return false;
+            /*
+            else if(attacking a wall){
             }
+            */
+            else
+                return true;
             break;
-        case 4:
-            if(shooting)
+        case '5':
+           if(shooting)
                 return false;
             else if(From - To > 1)
                 return false;
-            else
-            {
-
+            else if((theEnd == 4) || (theEnd == 5) || (theEnd == 6))
+                return false;
+            /*
+            else if(attacking a wall){
             }
+            */
+            else
+                return true;
             break;
-        case 5:
+        case '6':
             if(shooting)
             {
-
+                if(UnitMap[getIndex(To)] == 0)
+                    return false;
+                if(onWall)
+                {
+                    if((From - To) > 2)
+                        return false;
+                    else if(endWall && ((From - To) == 2))
+                        return false;
+                    else if((theEnd == 4) || (theEnd == 5) || (theEnd == 6))
+                        return false;
+                    else
+                        return true;
+                } else
+                {
+                    if((From - To) > 1)
+                        return false;
+                    else if((theEnd == 4) || (theEnd == 5) || (theEnd == 6))
+                        return false;
+                    else
+                        return true;
+                }
             } else
             {
-
+                if(From - To > 1)
+                    return false;
+                else if(theEnd != 0)
+                    return false;
+                else
+                    return true;
             }
             break;
         default:
